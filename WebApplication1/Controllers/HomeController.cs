@@ -11,6 +11,11 @@ namespace WebApplication1.Controllers
             return View();
         }
 
+        public IActionResult Hobby()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
