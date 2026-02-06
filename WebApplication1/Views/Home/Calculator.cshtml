@@ -3,19 +3,54 @@
     ViewData["Title"] = "Calculator";
 }
 
-<h1>Rate Calculator</h1>
-<p>Please enter the number of hours you'd like to receive tutoring below to receive your total rate:</p>
-<br />
-<label for="hour-input">Number of Tutoring Hours:</label>
-<input id="hour-input" type="number" name="hour-input" min="0" />
-<br />
-<label for="hourly-rate">Hourly Rate:</label>
-$<input id="hourly-rate" type="number" name="hourly-rate" value="45" readonly/>/hr
-<br />
-<button id="calc-btn">Calculate Total</button>
-<br />
-<br />
-<label for="outputBox">Total Rate:</label>
-<input type="text" id="output-box" readonly>
+<!-- Formatting is using classes from bootstrap-->
+<!--Outer container-->
+<div class="container mt-5" style="max-width: 500px;">
+    <h1 class="mb-3">Rate Calculator</h1>
 
+    <p class="text-muted">
+        Please enter the number of hours you'd like to receive tutoring to calculate your total cost.
+    </p>
 
+    <!-- Container for first input-->
+    <div class="mb-3">
+        <label for="hour-input" class="form-label">
+            Number of Tutoring Hours
+        </label>
+        <input id="hour-input"
+               type="number"
+               class="form-control"
+               min="0" />
+    </div>
+
+    <!-- Container for second input -->
+    <div class="mb-3">
+        <label for="hourly-rate" class="form-label">
+            Hourly Rate
+        </label>
+        <div class="input-group">
+            <span class="input-group-text">$</span>
+            <input id="hourly-rate"
+                   type="number"
+                   class="form-control"
+                   value="45"
+                   readonly />
+            <span class="input-group-text">/hr</span>
+        </div>
+    </div>
+
+    <button id="calc-btn" class="btn btn-primary w-100 mb-3">
+        Calculate Total
+    </button>
+
+    <!-- Container for output -->
+    <div>
+        <label for="output-box" class="form-label">
+            Total Rate
+        </label>
+        <input type="text"
+               id="output-box"
+               class="form-control"
+               readonly />
+    </div>
+</div>
