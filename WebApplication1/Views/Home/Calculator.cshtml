@@ -3,5 +3,15 @@
     ViewData["Title"] = "Calculator";
 }
 
-<h1>Calculator</h1>
+<h1>Rate Calculator</h1>
+<p>Please enter the number of hours you'd like to receive tutoring below to receive your total rate:</p>
+<br />
+<label for="hour-input">Number of Tutoring Hours:</label>
+<input id="hour-input" type="number" name="hour-input" min="0" value="" />
+<br />
+<label for="hourly-rate">Hourly Rate:</label>
+$<input id="hourly-rate" type="number" name="hourly-rate" value="45" readonly/>/hr
+<br />
+<button id="calc-btn">Calculate Total</button>
+
 
