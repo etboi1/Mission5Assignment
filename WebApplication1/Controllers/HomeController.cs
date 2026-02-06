@@ -16,6 +16,11 @@ namespace WebApplication1.Controllers
             return View();
         }
 
+        public IActionResult Calculator()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
